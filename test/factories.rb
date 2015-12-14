@@ -1,5 +1,8 @@
 
-FactoryGirl.define do
+FactoryGirl.define do  factory :course do
+    
+  end
+
 	factory :user do	
 		sequence :email do |n|
 		 	"b.obrien#{n}@me.com"
