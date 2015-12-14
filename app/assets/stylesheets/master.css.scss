@@ -1,0 +1,24 @@
+/*font family from css-tricks https://css-tricks.com/snippets/css/font-stacks/*/
+
+body {
+  /*background: url('/assets/crossword.png');*/
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-color: #FFFFFF;
+  }
+
+
+.navbar {
+  border-radius:0;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  font-color: #FFFFFF;  /*THIS IS NOT WORKING TO SET THE FONT COLOR OF THE NAVIGATION LINKS*/
+  background-color: #0B1C8A;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-default a.navbar-brand {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 36px;
+  font-weight: 100;
+  color: #E6E219;
+}
