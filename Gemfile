@@ -1,5 +1,14 @@
 source 'https://rubygems.org'
 
+#FactoryGirl for seed data
+gem 'factory_girl_rails'
+
+#Add simple form
+gem 'simple_form'
+
+#Devise User system
+gem 'devise', '>=3.2.4'
+
 #Bootstrap
 gem 'bootstrap-sass', '~>3.3.5'
 

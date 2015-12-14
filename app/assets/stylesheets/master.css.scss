@@ -10,7 +10,8 @@ body {
   border-radius:0;
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
-  font-color: #FFFFFF;  /*THIS IS NOT WORKING TO SET THE FONT COLOR OF THE NAVIGATION LINKS*/
+  font-size: 24px;
+  color: white;  /*THIS IS NOT WORKING TO SET THE FONT COLOR OF THE NAVIGATION LINKS*/
   background-color: #070854;
   box-shadow: 0px 1px 3px #2a2a2a;
 }
@@ -52,3 +53,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-weight: 200;
 }
 
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:10px;
+  margin-top: 40px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
+}
