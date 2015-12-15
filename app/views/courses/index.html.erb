@@ -8,12 +8,12 @@
 
 <% @courses.each do |course| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-	<h2 class = "text-center"><%= course.title %></h2>
+	<h2 class = "text-center"><%= link_to course.title, course_path(course) %></h2>
 	    <div class="col-sm-8 col-xs-12">
       		<%= course.description %>
     	</div>
    		 <div class="col-sm-4 col-xs-12 text-center">
-      		<%= link_to 'Interested?', '#', :class => 'btn btn-primary btn-large' %>
+      		<%= link_to 'Interested?', course_path(course), :class => 'btn btn-primary btn-large' %>
     	</div>
 </div>    	
      <br class="clr" />
