@@ -7,7 +7,7 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
 	
 			assert_difference 'Course.count' do
 				post :create, :course => {
-					:name => 'atlas shrugged',
+					:name => "blah",
 					:description => 'get them hips swaying',
 					:cost => 100.00
 					}
