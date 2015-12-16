@@ -1,5 +1,8 @@
 
-FactoryGirl.define do  factory :section do
+FactoryGirl.define do  factory :lesson do
+    
+  end
+  factory :section do
     
   end
   
