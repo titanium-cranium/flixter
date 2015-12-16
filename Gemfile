@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'htmlbeautifier'
+
 #FactoryGirl for seed data
 gem 'factory_girl_rails'
 
