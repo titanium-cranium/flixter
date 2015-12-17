@@ -1,5 +1,15 @@
 source 'https://rubygems.org'
 
+#Add Figaro for security
+gem 'figaro'
+
+#Fog is so carrierwave can use S3
+gem "fog", "~> 1.3.1"
+
+#Carrierwave to upload images
+gem 'carrierwave'
+
+#does ruby code auto-formatting
 gem 'htmlbeautifier'
 
 #FactoryGirl for seed data
