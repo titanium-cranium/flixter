@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#adding minimagick to modify image properties
+gem 'mini_magick', '~> 4.3.1'
+
 #Add Figaro for security
 gem 'figaro'
 
