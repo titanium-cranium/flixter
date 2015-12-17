@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Carrierwave to upload images
+gem 'carrierwave'
+
 #adding minimagick to modify image properties
 gem 'mini_magick', '~> 4.3.1'
 
@@ -7,10 +10,12 @@ gem 'mini_magick', '~> 4.3.1'
 gem 'figaro'
 
 #Fog is so carrierwave can use S3
-gem "fog", "~> 1.3.1"
+# gem "fog", "~> 1.3.1"
 
-#Carrierwave to upload images
-gem 'carrierwave'
+#Replacing fog with carrierwave-aws
+gem 'carrierwave-aws'
+
+
 
 #does ruby code auto-formatting
 gem 'htmlbeautifier'
