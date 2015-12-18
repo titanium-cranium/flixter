@@ -5,6 +5,7 @@
   <h1 class="text-center"><%= @course.title %></h1>
   <br />
     <%= image_tag @course.image, :class => 'img-responsive' %>
+    <br /> <br />
 	<div class="col-sm-4 col-xs-12 text-center">
 		<span class="label label-default">
 			<%= number_to_currency @course.cost %>
@@ -13,11 +14,17 @@
       <br /><br />
       <%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-danger btn-large' %>
     <% end %>	
-
+    <br />
+    <br />
+    <% if current_user && current_user.enrolled_in?(@course) %>
+      <h3 class="label label-info">You're Enrolled!</h3>
+    <% else %>
+      <%= link_to 'Enroll now!', course_enrollments_path(@course), :class => 'btn btn-primary', :method => :post %>
+    <% end %> 
 	</div>
 
 	<div class="col-sm-8 col-xs-12">
-		<%= @course.description %>
+		<h2><%= @course.description %></h2>
 	</div>
 	  <div class="col-xs-12">
     <% @course.sections.each do |section| %>
