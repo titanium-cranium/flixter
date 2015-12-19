@@ -4,6 +4,8 @@ class Lesson < ActiveRecord::Base
 
   validates :title, :presence => true
 
+  include RankedModel
+  ranks :row_order, :with_same => :section_id
 
   def new
   end

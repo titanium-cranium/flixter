@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#For manipulating order of items in a list
+gem 'ranked-model'
+
 #credit card payment functionality
 gem 'stripe'
 
