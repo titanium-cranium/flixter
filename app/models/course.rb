@@ -6,6 +6,14 @@ class Course < ActiveRecord::Base
   #carrierwave
   mount_uploader :image, ImageUploader
 
+  def free?
+    cost.zero?
+  end
+
+  def premium?
+    ! free?
+  end
+
   validates :title, :presence => true
   validates :description, :presence => true
   validates :cost, :presence => true, :numericality => {:greater_than_or_equal_to => 0}
