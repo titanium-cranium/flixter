@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#credit card payment functionality
+gem 'stripe'
+
 #Carrierwave to upload images
 gem 'carrierwave'
 
@@ -14,8 +17,6 @@ gem 'figaro'
 
 #Replacing fog with carrierwave-aws
 gem 'carrierwave-aws'
-
-
 
 #does ruby code auto-formatting
 gem 'htmlbeautifier'
