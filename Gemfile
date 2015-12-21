@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#for dragging & dropping lists
+gem 'jquery-ui-rails'
+
 #For manipulating order of items in a list
 gem 'ranked-model'
 
