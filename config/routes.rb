@@ -10,6 +10,7 @@ Flixter::Application.routes.draw do
 
 
   namespace :instructor do
+    resources :sections, :only => [:update]
     resources :lessons, :only => [:update]  #why not just ad :update to resources:lessons below?
     resources :sections, :only => [] do
       resources :lessons, :only => [:new, :create]
