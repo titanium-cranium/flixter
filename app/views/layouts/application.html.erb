@@ -102,11 +102,49 @@
 
 <div id="footer">
   <div class="container">
-    <b>Teachers</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Teachers</b>
+      <br />
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <br />
+      <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>About</b>
+      <br />
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Contact</b>
+      <br />
+      titaniumcranium@icloud.com
+      <br />
+      Melbourne, VIC
+      <br />
+      Australia
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'http://github.com/titanium-cranium' do %>
+          <%= image_tag 'github.png', :class => "social-button" %>
+        <% end %>
+        <%= link_to 'https://au.linkedin.com/in/bjobrienphd' do %>  
+          <%= image_tag 'linkedin.png', :class => "social-button" %>
+        <% end %>
+        <%= link_to 'http://titanium-cranium.com' do %>
+          <%= image_tag 'TC.png', :class => "social-button" %>
+        <% end %>
+    </div>
   </div>
 </div>
 
 </body>
 </html>
+
+
