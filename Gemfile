@@ -37,7 +37,7 @@ gem 'simple_form'
 gem 'devise', '>=3.2.4'
 
 #Bootstrap
-gem 'bootstrap-sass', '~>3.3.5'
+gem 'bootstrap-sass', '3.3.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -46,7 +46,10 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
+
+# adding for bootstrap functionality
+gem 'sprockets', '2.11.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
